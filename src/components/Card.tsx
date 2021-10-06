@@ -15,17 +15,28 @@ export const Card = ({
   link: string;
   address?: string;
 }) => {
-  const bg = useColorModeValue('gray.700', 'gray.100');
+  const bg = useColorModeValue('white', 'gray.300');
   const color = useColorModeValue('gray.100', 'gray.700');
+  const shadow = useColorModeValue('lg', 'inner');
   let str = '$';
 
   return (
-    <Box bg={bg} color={color} p='2vw' maxW='20vw' borderRadius={10}>
-      <Flex alignItems='center' direction='column'>
-        <Heading fontSize='2vw' mb={5}>
+    <Box
+      bg='white'
+      color='gray.700'
+      p='30px'
+      m='20px'
+      w='content'
+      borderRadius={5}
+      boxShadow={shadow}
+      borderTop='3px solid'
+      borderColor='cyan.300'
+    >
+      <Flex alignItems='start' direction='column' p={0}>
+        <Heading fontSize='20px' mb={5}>
           {title} <span>{str.repeat(dollarSigns)}</span>
         </Heading>
-        <Text fontSize='1vw'>{content}</Text>
+        <Text fontSize='14px'>{content}</Text>
       </Flex>
     </Box>
   );

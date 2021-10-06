@@ -21,6 +21,7 @@ const Index = () => (
       <Flex alignContent='center' justifyContent='space-around'>
         <Card />
         <Card />
+        <Card />
       </Flex>
     </Main>
 
