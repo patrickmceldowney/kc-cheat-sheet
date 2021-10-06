@@ -1,61 +1,68 @@
-export const dinnerFancy = [
+import { PlaceTypes } from './types';
+export const dinnerFancy: PlaceTypes[] = [
   {
     title: 'Fox & Pearl',
-    content: '🔥🔥🔥',
+    content: 'description of why this place got its placement',
+    rating: 'do',
+    dollarSigns: 3,
+  },
+  {
+    title: 'Antons',
+    content: 'description of why this place got its placement',
     rating: 'do',
     dollarSigns: 3,
   },
 ];
 
-export const dinnerCas = [
+export const dinnerCas: PlaceTypes[] = [
   {
     title: 'Baramee Thai',
-    content: '🔥🔥🔥',
+    content: 'description of why this place got its placement',
     rating: 'do',
     dollarSigns: 2,
   },
 ];
 
-export const breakfast = [
+export const breakfast: PlaceTypes[] = [
   {
     title: 'Happy Gillis',
-    content: '🍳🥚☕',
+    content: 'description of why this place got its placement',
     rating: 'do',
     dollarSigns: 2,
   },
 ];
 
-export const cocktails = [
+export const cocktails: PlaceTypes[] = [
   {
     title: 'Crossroads',
-    content: '🍸🍸🍸',
-    rating: 'ok',
+    content: 'description of why this place got its placement',
+    rating: 'meh',
     dollarSigns: 3,
   },
 ];
 
-export const beerAndCasual = [
+export const beerAndCasual: PlaceTypes[] = [
   {
     title: 'Boulevard Brewing',
-    content: '🍺🍺🍺',
-    rating: 'ok',
+    content: 'description of why this place got its placement',
+    rating: 'meh',
     dollarSigns: 1,
   },
 ];
 
-export const wine = [
+export const wine: PlaceTypes[] = [
   {
     title: 'KC Wine Co',
-    content: '🍷👎',
+    content: 'description of why this place got its placement',
     rating: 'dont',
     dollarSigns: 2,
   },
 ];
 
-export const caffeine = [
+export const caffeine: PlaceTypes[] = [
   {
     title: 'Oddly Correct',
-    content: '☕☕☕',
+    content: 'description of why this place got its placement',
     rating: 'do',
     dollarSigns: 2,
   },
