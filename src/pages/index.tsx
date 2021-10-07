@@ -24,10 +24,10 @@ import {
 } from '../lib/constants';
 
 const Index = () => (
-  <Container height='100vh'>
+  <Container minHeight='100vh'>
     <Hero title='Kansas City Cheat Sheet' />
-    <Main>
-      <Tabs isFitted variant='enclosed'>
+    <Main maxW='100vw'>
+      <Tabs isFitted variant='enclosed' m='0 2em'>
         <TabList mb='1em'>
           <Tab>Fancy Dinner 💃🎩</Tab>
           <Tab>Casual Dinner 🧢</Tab>
@@ -38,7 +38,7 @@ const Index = () => (
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {dinnerFancy.map((place, index) => (
                 <Card
                   key={index}
@@ -51,7 +51,7 @@ const Index = () => (
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {dinnerCas.map((place, index) => (
                 <Card
                   key={index}
@@ -64,7 +64,7 @@ const Index = () => (
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {cocktails.map((place, index) => (
                 <Card
                   key={index}
@@ -77,7 +77,7 @@ const Index = () => (
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {beerAndCasual.map((place, index) => (
                 <Card
                   key={index}
@@ -90,7 +90,7 @@ const Index = () => (
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {wine.map((place, index) => (
                 <Card
                   key={index}
@@ -103,7 +103,7 @@ const Index = () => (
             </Flex>
           </TabPanel>
           <TabPanel>
-            <Flex alignContent='center'>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
               {caffeine.map((place, index) => (
                 <Card
                   key={index}

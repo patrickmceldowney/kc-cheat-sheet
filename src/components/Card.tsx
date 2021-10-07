@@ -15,18 +15,19 @@ export const Card = ({
   link,
   address,
 }: PlaceTypes) => {
-  const bg = useColorModeValue('white', 'gray.300');
-  const color = useColorModeValue('gray.100', 'gray.700');
+  const bg = useColorModeValue('white', 'gray.600');
+  const color = useColorModeValue('gray.700', 'gray.100');
   const shadow = useColorModeValue('lg', 'inner');
   let str = '$';
 
   return (
     <Box
-      bg='white'
-      color='gray.700'
+      bg={bg}
+      color={color}
       p='30px'
       m='20px'
-      w='content'
+      maxW='20em'
+      h='auto'
       borderRadius={5}
       boxShadow={shadow}
       borderTop='3px solid'
