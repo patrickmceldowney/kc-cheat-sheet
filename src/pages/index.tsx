@@ -27,10 +27,11 @@ const Index = () => (
   <Container minHeight='100vh'>
     <Hero title='Kansas City Cheat Sheet' />
     <Main maxW='100vw'>
-      <Tabs isFitted variant='enclosed' m='0 2em'>
+      <Tabs isFitted variant='enclosed' m='0 2em' size='sm'>
         <TabList mb='1em'>
           <Tab>Fancy Dinner 💃🎩</Tab>
           <Tab>Casual Dinner 🧢</Tab>
+          <Tab>Breakfast 🍳</Tab>
           <Tab>Cocktails 🍸</Tab>
           <Tab>Beer and Casual Hangs 🍻</Tab>
           <Tab>Wine 🍷</Tab>
@@ -46,6 +47,8 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
@@ -59,6 +62,23 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
+                />
+              ))}
+            </Flex>
+          </TabPanel>
+          <TabPanel>
+            <Flex alignContent='center' justifyContent='center' wrap='wrap'>
+              {breakfast.map((place, index) => (
+                <Card
+                  key={index}
+                  title={place.title}
+                  content={place.content}
+                  rating={place.rating}
+                  dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
@@ -72,6 +92,8 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
@@ -85,6 +107,8 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
@@ -98,6 +122,8 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
@@ -111,6 +137,8 @@ const Index = () => (
                   content={place.content}
                   rating={place.rating}
                   dollarSigns={place.dollarSigns}
+                  link={place.link}
+                  address={place.address}
                 />
               ))}
             </Flex>
