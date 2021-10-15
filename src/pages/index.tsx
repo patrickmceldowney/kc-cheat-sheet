@@ -27,8 +27,12 @@ const Index = () => (
   <Container minHeight='100vh'>
     <Hero title='Kansas City Cheat Sheet' />
     <Main maxW='100vw'>
-      <Tabs isFitted variant='enclosed' m='0 2em' size='sm'>
-        <TabList mb='1em'>
+      <Tabs isFitted variant='enclosed' m='0 2em'>
+        <TabList
+          mb='1em'
+          overflowX={{ sm: 'scroll', md: 'hidden' }}
+          overflowY='hidden'
+        >
           <Tab>Fancy Dinner 💃🎩</Tab>
           <Tab>Casual Dinner 🧢</Tab>
           <Tab>Breakfast 🍳</Tab>
